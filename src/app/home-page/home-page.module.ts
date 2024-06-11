@@ -6,6 +6,7 @@ import { ComponentsModule } from '../components/components.module';
 import { NormativaComponent } from './normativa/normativa.component';
 import { AcercaDeComponent } from './acerca-de/acerca-de.component';
 import { PrincipalComponent } from './principal/principal.component';
+import { ServiceMiniCardComponent } from './service-mini-card/service-mini-card.component';
 
 
 @NgModule({
@@ -14,6 +15,7 @@ import { PrincipalComponent } from './principal/principal.component';
     NormativaComponent,
     AcercaDeComponent,
     PrincipalComponent,
+    ServiceMiniCardComponent,
   ],
   imports: [
     CommonModule,

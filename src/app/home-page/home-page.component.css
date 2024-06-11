@@ -1,0 +1,10 @@
+
+hr {
+  display:block;
+  border:0px;
+  height:100px;
+  background-image: url('../../assets/background/separador.png') ;
+  background-size: cover;
+  background-repeat: repeat-x;
+  margin-bottom: -50px;
+}
