@@ -6,3 +6,21 @@ body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
 body {
   background-image: url('../src/assets/background/BACK_V1-1.jpg') ;
 }
+
+@font-face {
+  font-family: 'Gadugi'; /*a name to be used later*/
+  src: url('../src/assets/fonts/gadugi.ttf'); /*URL to font*/
+}
+
+h1 {
+  font-family: 'Gadugi';
+}
+
+h2 {
+  font-family: 'Gadugi';
+}
+
+P {
+  font-family: 'Gadugi';
+}
+
