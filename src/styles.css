@@ -18,9 +18,16 @@ h1 {
 }
 
 h2 {
+  font-size: 5rem !important;
+  line-height: 5rem !important;
+
   font-family: 'Gadugi';
 }
 
+h3 {
+  font-size: 3rem !important;
+  line-height: 3rem !important;
+}
 P {
   font-family: 'Gadugi';
 }

@@ -6,8 +6,9 @@ import { ComponentsModule } from '../components/components.module';
 import { NormativaComponent } from './normativa/normativa.component';
 import { AcercaDeComponent } from './acerca-de/acerca-de.component';
 import { PrincipalComponent } from './principal/principal.component';
-import { ServiceMiniCardComponent } from './service-mini-card/service-mini-card.component';
 import { DocumentButtonComponent } from './normativa/document-button/document-button.component';
+import { PlanesInternetComponent } from './planes-internet/planes-internet.component';
+import { DatosPlanComponent } from './planes-internet/datos-plan/datos-plan.component';
 
 
 @NgModule({
@@ -16,8 +17,9 @@ import { DocumentButtonComponent } from './normativa/document-button/document-bu
     NormativaComponent,
     AcercaDeComponent,
     PrincipalComponent,
-    ServiceMiniCardComponent,
     DocumentButtonComponent,
+    PlanesInternetComponent,
+    DatosPlanComponent,
   ],
   imports: [
     CommonModule,
