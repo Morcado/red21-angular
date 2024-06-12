@@ -23,10 +23,6 @@
   position: absolute;
 }
 
-.element-card {
-  max-width: 90px;
-  margin-left: 15px;
-}
 
 @-moz-keyframes spin { 100% { -moz-transform: rotate(360deg); } }
 @-webkit-keyframes spin { 100% { -webkit-transform: rotate(360deg); } }
