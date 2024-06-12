@@ -2,6 +2,17 @@
   text-align: end;
 }
 
+.spacer1 {
+  padding-top: 100px;
+  padding-bottom: 100px
+}
+
+.spacer2 {
+  padding-top: 80px;
+  padding-bottom: 80px
+}
+
+
 .main-logo {
   text-align: center;
   font-size: 9rem;
