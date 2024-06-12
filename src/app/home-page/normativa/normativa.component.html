@@ -1,15 +1,51 @@
 <div class="row">
-
   <div class="col">
 
-    <h2 class="text-center">Normatividad</h2>
-    <mat-list>
-      <mat-list-item>Constancia IDF cobertura</mat-list-item>
-      <mat-list-item>Derechos del usuario</mat-list-item>
-      <mat-list-item>Constancia IFT nombre comercial</mat-list-item>
-      <mat-list-item>Prácticas comerciales</mat-list-item>
-      <mat-list-item>Contrato de adhesión</mat-list-item>
-    </mat-list>
 
+    <div class="row">
+      <div class="col">
+        <h2 class="text-center display-1">Normatividad</h2>
+
+      </div>
+    </div>
+
+    <div class="row mx-5 px-3 d-flex justify-content-center">
+      <div class="col px-0 text-center">
+
+        <app-document-button
+          [title]="1"
+          name="Constancia IFT Cobertura"
+        ></app-document-button>
+      </div>
+
+      <div class="col px-0 text-center">
+        <app-document-button
+        [title]="2"
+        name="Derechos del usuario"
+        ></app-document-button>
+      </div>
+
+      <div class="col px-0 text-center">
+        <app-document-button
+          [title]="3"
+          name="Constancia IFT nombre comercial"
+        ></app-document-button>
+      </div>
+
+      <div class="col px-0 text-center">
+        <app-document-button
+          [title]="4"
+          name="Prácticas comerciales"
+        ></app-document-button>
+      </div>
+
+      <div class="col px-0 text-center">
+        <app-document-button
+          [title]="5"
+          name="Contrato de adhesión"
+        ></app-document-button>
+      </div>
+
+    </div>
   </div>
 </div>

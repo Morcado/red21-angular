@@ -1,0 +1,33 @@
+.icon {
+  height: 30px;
+}
+
+.red-button {
+  display: inline-block;
+  position: relative;
+  border-radius: 1000px;
+}
+
+a {
+  color: white;
+}
+
+.red-button:hover {
+  border-radius: 1000px;
+  filter: sepia() saturate(1000%)  hue-rotate(0deg) ;
+  -webkit-filter: sepia() saturate(1000%)  hue-rotate(0deg) ;
+}
+
+.red-button-img {
+  border-radius: 1000px;
+}
+
+.red-button-content {
+  border-radius: 1000px;
+  height: 100%;
+  width: 100%;
+  left: 0;
+  top: 0%;
+  position: absolute;
+  text-transform: uppercase;
+}
