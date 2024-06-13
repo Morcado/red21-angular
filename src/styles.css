@@ -8,20 +8,16 @@ body {
   background-size: cover;
 }
 
-@font-face {
-  font-family: 'Gadugi'; /*a name to be used later*/
-  src: url('../src/assets/fonts/gadugi.ttf'); /*URL to font*/
-}
 
 h1 {
-  font-family: 'Gadugi';
+
 }
 
 h2 {
   font-size: 5rem !important;
   line-height: 5rem !important;
 
-  font-family: 'Gadugi';
+
 }
 
 h3 {
@@ -30,10 +26,17 @@ h3 {
 }
 
 p {
-  font-family: 'Gadugi';
+  font-size: 1.5rem;
+  line-height: 2rem;
+
 }
 
-.spacer50 {
+.spacer-h50 {
   padding-top: 50px;
   padding-bottom: 50px;
+}
+
+.spacer-w200 {
+  padding-left: 200px;
+  padding-right: 200px;
 }

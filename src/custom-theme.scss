@@ -33,3 +33,14 @@ $red21-theme: mat.define-dark-theme((
 // that you are using.
 @include mat.all-component-themes($red21-theme);
 
+@font-face {
+  font-family: 'Open Sans'; /*a name to be used later*/
+  src: url('../src/assets/fonts/OpenSans-VariableFont.ttf'); /*URL to font*/
+}
+
+
+@import '~@angular/material/theming';
+$custom-typography: mat-typography-config(
+  $font-family: 'Open Sans'
+);
+@include mat-core($custom-typography);
