@@ -12,6 +12,8 @@ export class DocumentButtonComponent implements OnInit {
   @Input()
   public title: number;
 
+  @Input()
+  public document: string = "";
   constructor() {
     this.name = "";
     this.title = 0;
