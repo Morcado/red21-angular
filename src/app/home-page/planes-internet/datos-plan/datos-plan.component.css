@@ -1,6 +1,7 @@
 .datos-plan {
   display: inline-block;
   position: relative;
+  margin-bottom: 100px;
 }
 
 .datos-plan-content {

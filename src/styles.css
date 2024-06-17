@@ -5,7 +5,9 @@ body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
 
 body {
   background-image: url('../src/assets/background/full-background.png') ;
-  background-size: cover;
+  background-size: initial;
+  background-repeat: repeat-y;
+  background-color: black !important;
 }
 
 
@@ -13,12 +15,26 @@ h1 {
 
 }
 
-h2 {
-  font-size: 5rem !important;
-  line-height: 5rem !important;
+@media (max-width:1025px) {
+
+  h2 {
+    font-size: 3.5rem !important;
+    line-height: 3.5rem !important;
 
 
+  }
 }
+
+@media (min-width:1025px) {
+
+  h2 {
+    font-size: 5rem !important;
+    line-height: 5rem !important;
+
+
+  }
+}
+
 
 h3 {
   font-size: 3rem !important;
@@ -36,7 +52,12 @@ p {
   padding-bottom: 50px;
 }
 
-.spacer-w200 {
-  padding-left: 200px;
-  padding-right: 200px;
+@media (min-width:1025px) {
+
+
+  .spacer-w200 {
+    padding-left: 200px;
+    padding-right: 200px;
+  }
+
 }

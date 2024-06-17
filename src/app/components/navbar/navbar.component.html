@@ -1,16 +1,43 @@
-<mat-toolbar class="menu">
-  <span class="example-spacer"></span>
-  <button class="menu-button" mat-button>
-    Normatividad
-  </button>
-  <button class="menu-button" mat-button>
-    Planes
-  </button>
-  <button class="menu-button" mat-button>
-    ¿Quiénes somos?
-  </button>
-  <button class="menu-button" mat-button>
-    Contacto
-  </button>
+<div>
 
-</mat-toolbar>
+  <mat-toolbar class="menu">
+    <button mat-icon-button class="menu d-md-none" aria-label="Menu" (click)="sidenav.toggle()">
+      <mat-icon>menu</mat-icon>
+    </button>
+
+    <span class="example-spacer"></span>
+    <!-- Hide on mobile -->
+    <div class="d-none d-sm-block">
+      <button class="menu-button" mat-button>
+        Normatividad
+      </button>
+      <button class="menu-button" mat-button>
+        Planes
+      </button>
+      <button class="menu-button" mat-button>
+        ¿Quiénes somos?
+      </button>
+      <button class="menu-button" mat-button>
+        Contacto
+      </button>
+    </div>
+
+  </mat-toolbar>
+
+  <!-- Hide on desktop -->
+  <mat-sidenav-container class="menu">
+    <mat-sidenav class="d-md-none" color="primary" #sidenav mode="over" opened="false">
+
+        <mat-nav-list routerLink="/about-us">About us</mat-nav-list>
+        <mat-nav-list routerLink="/prices">Prices</mat-nav-list>
+        <mat-nav-list routerLink="/start-page">Start page</mat-nav-list>
+        <mat-nav-list routerLink="/offer">Offer</mat-nav-list>
+        <mat-nav-list routerLink="/contact">Contact</mat-nav-list>
+
+    </mat-sidenav>
+    <mat-sidenav-content>
+
+    </mat-sidenav-content>
+  </mat-sidenav-container>
+
+</div>
