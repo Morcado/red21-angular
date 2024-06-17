@@ -8,13 +8,6 @@
   padding-bottom: 80px
 }
 
-
-.main-logo {
-  text-align: center;
-  font-size: 9rem;
-  text-shadow: 2px 2px 4px #000000;
-}
-
 @media (max-width:1025px) {
 
   .animation-logo {
@@ -54,12 +47,8 @@
     flex: 1;
   }
 
-
 }
-
 
 @-moz-keyframes spin { 70% { -moz-transform: rotate(360deg); } }
 @-webkit-keyframes spin { 70% { -webkit-transform: rotate(360deg); } }
 @keyframes spin { 70% { -webkit-transform: rotate(360deg); transform:rotate(360deg); } }
-
-@media (min-width:480px) { /* smartphones, Android phones, landscape iPhone */ }
