@@ -39,7 +39,7 @@ $red21-theme: mat.define-dark-theme((
 }
 
 
-@import '~@angular/material/theming';
+@import '@angular/material/theming';
 $custom-typography: mat-typography-config(
   $font-family: 'Open Sans'
 );
