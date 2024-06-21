@@ -78,3 +78,24 @@ p {
   background: rgb(0,0,0);
   background: linear-gradient(0deg, rgba(0,0,0,0) 0%, rgba(0,0,0,1) 100%);
 }
+
+mat-toolbar {
+  background-color: rgba(0, 0, 0, 0.5) !important;
+}
+
+mat-sidenav-container {
+  background-color: transparent !important;
+}
+
+.mat-drawer {
+  background-color: rgba(0, 0, 0, 0.8) !important;
+  position: fixed !important;
+  padding-top: 100px !important;
+}
+.mat-drawer-backdrop {
+  background-color: transparent !important;
+}
+
+.mat-drawer-inner-container {
+  overflow: hidden;
+}

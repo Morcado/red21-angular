@@ -1,23 +1,63 @@
-<main >
-  <app-navbar>
-  </app-navbar>
-  <div class="container-fluid">
-    <app-principal></app-principal>
-    <div class="spacer"></div>
-    <div >
-      <hr class="separador">
-    </div>
-    <app-normativa id="normatividad"></app-normativa>
-    <div >
-      <hr class="separador">
-    </div>
-    <app-planes-internet id="planes"></app-planes-internet>
-    <div >
-      <hr class="separador">
-    </div>
-    <app-acerca-de id="acerca"></app-acerca-de>
-    <hr class="separador">
-    <app-footer></app-footer>
-  </div>
+<nav>
+  <mat-toolbar class="fixed-menu">
+    <button mat-icon-button class=" d-md-none" aria-label="Menu" (click)="sidenav.toggle()">
+      <mat-icon>menu</mat-icon>
+    </button>
 
-</main>
+    <span class="nav-spacer"></span>
+    <!-- Hide on mobile -->
+    <div class="d-none d-md-block">
+      <a href="#inicio" class="menu-button" mat-button>
+        Inicio
+      </a>
+      <a href="#normatividad" class="menu-button" mat-button>
+        Normatividad
+      </a>
+      <a href="#planes" class="menu-button" mat-button>
+        Planes
+      </a>
+      <a href="#acerca" class="menu-button" mat-button>
+        ¿Quiénes somos?
+      </a>
+      <a href="#footer" class="menu-button" mat-button>
+        Contacto
+      </a>
+    </div>
+    <span class="nav-spacer"></span>
+
+  </mat-toolbar>
+
+  <!-- Hide on desktop -->
+  <mat-sidenav-container>
+    <mat-sidenav class="d-md-none sidenav" color="primary" #sidenav mode="over" opened="false">
+      <div class="col   align-items-center justify-content-center">
+        <a mat-button class="d-block display-3 py-4" (click)="sidenav.toggle()" href="#inicio">Inicio</a>
+        <a mat-button class="d-block display-3 py-4" (click)="sidenav.toggle()" href="#normatividad">Normatividad</a>
+        <a mat-button class="d-block display-3 py-4" (click)="sidenav.toggle()" href="#planes">Planes</a>
+        <a mat-button class="d-block display-3 py-4" (click)="sidenav.toggle()" href="#acerca">¿Quiénes somos?</a>
+        <a mat-button class="d-block display-3 py-4" (click)="sidenav.toggle();" href="#footer">Contacto</a>
+      </div>
+
+    </mat-sidenav>
+
+    <mat-sidenav-content class="sidenav-content">
+      <div class="container-fluid">
+        <app-principal id="inicio"></app-principal>
+        <div class="spacer"></div>
+        <hr class="separador">
+        <app-normativa id="normatividad"></app-normativa>
+        <hr class="separador">
+        <app-planes-internet id="planes"></app-planes-internet>
+        <hr class="separador">
+        <app-acerca-de id="acerca"></app-acerca-de>
+        <hr class="separador">
+        <app-footer id="footer"></app-footer>
+      </div>
+    </mat-sidenav-content>
+  </mat-sidenav-container>
+
+</nav>
+
+
+
+

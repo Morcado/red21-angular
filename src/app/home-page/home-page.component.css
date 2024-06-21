@@ -14,3 +14,46 @@ hr {
   padding-top: 50px;
   padding-bottom: 50px
 }
+
+.nav-spacer {
+  flex: 1 1 auto;
+}
+
+.nav-spacer2 {
+  flex: 0.3 0.35 auto;
+}
+
+
+.fixed-menu {
+  position: fixed;
+  z-index: 10;
+  top: 0;
+  left: 0;
+  right: 0;
+}
+
+.menu-button:hover {
+  color: yellow;
+}
+
+.sidenav {
+  display: flex;
+  position: absolute;
+  text-align: center;
+  width: 100%;
+  padding: 20px;
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
+.sidenav-content {
+  display: flex;
+  height: 100%;
+  align-items: center;
+  justify-content: center;
+}
+
+.menu-button {
+  margin-left: 30px;
+  margin-right: 30px;
+}
